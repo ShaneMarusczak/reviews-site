@@ -2,11 +2,15 @@
 <html xmlns:th="https//www.thymeleaf.org">
 <head>
 <title>A Course</title>
+<link rel="stylesheet" type="text/css"
+	href="/css/ReviewPageStyleSheet.css" />
 </head>
 <body>
-	<h1>A Single Course</h1>
+	<h1 id="heading">A Single Course</h1>
 
-	<div th:each="review: ${reviews}">
+	<img th:src="@{/images/{image}(image=${review.image})}">
+
+	<div id="list" th:each="review: ${reviews}">
 		<p th:text="${review.title}"></p>
 		<p th:text="${review.category}"></p>
 		<a href="http://localhost:8080/show-all-reviews">Back to home</a>

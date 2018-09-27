@@ -11,13 +11,16 @@ public class ReviewSiteRepository {
 	private HashMap<Long, Review> reviewList = new HashMap<Long, Review>();
 
 	public ReviewSiteRepository() {
-		Review tech = new Review(1L, "tech", "tech");
-		Review toys = new Review(2L, "toys", "toys");
-		Review books = new Review(3L, "books", "books");
+		Review springMVC = new Review(1L, "Spring Boot & MVC",
+				"This page reviews information on how to use Spring Boot & MVC and its functionality. ", "java.png");
+		Review thymeleaf = new Review(2L, "Thymeleaf",
+				"This page reviews information on what Thymeleaf is, and how to use it.", "thyme.jpg");
+		Review htmlcss = new Review(3L, "HTML & CSS", "This page reviews what HTML and CSS are, and how to use them. ",
+				"html.png");
 
-		reviewList.put(tech.getId(), tech);
-		reviewList.put(toys.getId(), toys);
-		reviewList.put(books.getId(), books);
+		reviewList.put(springMVC.getId(), springMVC);
+		reviewList.put(thymeleaf.getId(), thymeleaf);
+		reviewList.put(htmlcss.getId(), htmlcss);
 
 	}
 
@@ -28,16 +31,13 @@ public class ReviewSiteRepository {
 
 	}
 
-	public Review getOneReview(long firstTestId) {
-		return reviewList.get(firstTestId);
+	public Review getOneReview(long Id) {
+		return reviewList.get(Id);
 	}
 
 	public Collection<Review> findAll() {
 		return reviewList.values();
 	}
 
-	public Review getOneCourse(Long id) {
-		return reviewList.get(id);
-	}
 
 }

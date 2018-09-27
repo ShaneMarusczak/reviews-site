@@ -19,9 +19,9 @@ public class ReviewSiteController {
 		return "reviews";
 	}
 
-	@RequestMapping("review")
+	@RequestMapping("/review")
 	public String findOneReview(@RequestParam(value = "id") Long id, Model model) {
-		model.addAttribute("reviews", reviewsRepo.getOneCourse(id));
+		model.addAttribute("reviews", reviewsRepo.getOneReview(id));
 		return "review";
 	}
 
