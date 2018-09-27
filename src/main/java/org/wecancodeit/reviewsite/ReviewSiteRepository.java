@@ -16,7 +16,7 @@ public class ReviewSiteRepository {
 		Review thymeleaf = new Review(2L, "Thymeleaf",
 				"This page reviews information on what Thymeleaf is, and how to use it.", "thyme.jpg");
 		Review htmlcss = new Review(3L, "HTML & CSS", "This page reviews what HTML and CSS are, and how to use them. ",
-				"html.png");
+				"html.jpg");
 
 		reviewList.put(springMVC.getId(), springMVC);
 		reviewList.put(thymeleaf.getId(), thymeleaf);

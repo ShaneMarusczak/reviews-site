@@ -6,15 +6,16 @@
 	href="/css/ReviewPageStyleSheet.css" />
 </head>
 <body>
-	<h1 id="heading">A Single Course</h1>
 
-	<img th:src="@{/images/{image}(image=${review.image})}">
+	<h1 id="heading" th:text="${review.title}"></h1>
+	<img th:src="@{/images/{image}(image=${review.image})}" />
 
-	<div id="list" th:each="review: ${reviews}">
-		<p th:text="${review.title}"></p>
-		<p th:text="${review.category}"></p>
-		<a href="http://localhost:8080/show-all-reviews">Back to home</a>
 
-	</div>
+
+	<p th:text="${review.title}"></p>
+	<p th:text="${review.category}"></p>
+	<a href="http://localhost:8080/show-all-reviews">Back to home</a>
+
+
 </body>
 </html>
