@@ -8,14 +8,12 @@
 <body>
 
 	<h1 id="heading" th:text="${review.title}"></h1>
-	<img th:src="@{/images/{image}(image=${review.image})}" />
+	<div id="container">
+		<img id="picture" th:src="@{/images/{image}(image=${review.image})}" />
+	</div>
 
-
-
-	<p th:text="${review.title}"></p>
-	<p th:text="${review.category}"></p>
+	<p id="category" th:text="${review.category}"></p>
+	<p id="content" th:text="${review.content}"></p>
 	<a href="http://localhost:8080/show-all-reviews">Back to home</a>
-
-
 </body>
 </html>

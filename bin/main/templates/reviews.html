@@ -2,10 +2,10 @@
 <html xmlns:th="https//www.thymeleaf.org">
 <head>
 <title>All Reviews</title>
-<link rel="stylesheet" type="text/css" href="/css/ReviewsPageStyleSheet.css" />
+<link rel="stylesheet" type="text/css" href="/css/ReviewPageStyleSheet.css" />
 </head>
 <body>
-	<h1>List of all Reviews</h1>
+	<h1 id="heading">List of all Reviews</h1>
 
 	<div th:each="review: ${reviews}">
 		<li><a th:href="@{/review(id=${review.id})}"

@@ -1,11 +1,28 @@
 /*ReviewPageStyleSheet.css*/
-body{
+body {
 	background-color: #000000;
 }
+
 #heading {
-	color: #ffff00;
+	color: #ffffff;
+}
+
+#container {
+	width: 350px;
+}
+
+#container #picture {
+	max-width: 100%;
+	height: auto;
 }
 
 p {
+	font-size: large;
 	color: #ffffff;
+}
+
+A:hover {
+	COLOR: white;
+	TEXT-DECORATION: none;
+	font-weight: none
 }

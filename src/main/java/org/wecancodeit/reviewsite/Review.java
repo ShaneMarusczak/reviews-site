@@ -6,12 +6,14 @@ public class Review {
 	private String title;
 	private String category;
 	private String image;
+	private String content;
 
-	Review(Long id, String title, String category, String image) {
+	Review(Long id, String title, String category, String image, String content) {
 		this.Id = id;
 		this.title = title;
 		this.category = category;
 		this.image = image;
+		this.content = content;
 	}
 
 	public Long getId() {
@@ -28,6 +30,10 @@ public class Review {
 
 	public String getImage() {
 		return image;
+	}
+
+	public String getContent() {
+		return content;
 	}
 
 }
