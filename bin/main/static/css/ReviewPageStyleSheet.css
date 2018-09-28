@@ -1,6 +1,7 @@
 /*ReviewPageStyleSheet.css*/
 body {
-	background-color: #000000;
+	background-image: url("/images/img0.jpg");
+	background-size: 100%;
 }
 
 #heading {
@@ -16,8 +17,11 @@ body {
 	height: auto;
 }
 
-p {
+#category {
 	font-size: large;
+}
+
+p {
 	color: #ffffff;
 }
 
