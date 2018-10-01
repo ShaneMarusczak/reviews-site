@@ -8,9 +8,11 @@
 <body>
 
 	<h1 id="heading" th:text="${review.title}"></h1>
-	<div id="container">
+
+	<figure>
 		<img id="picture" th:src="@{/images/{image}(image=${review.image})}" />
-	</div>
+	</figure>
+
 
 	<p id="category" th:text="${review.category}"></p>
 	<p id="content" th:text="${review.content}"></p>

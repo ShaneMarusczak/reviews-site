@@ -8,11 +8,11 @@ body {
 	color: #ffffff;
 }
 
-#container {
-	width: 350px;
+figure {
+	width: 400px;
 }
 
-#container #picture {
+figure #picture {
 	max-width: 100%;
 	height: auto;
 }
